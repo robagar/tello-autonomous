@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tello-autonomous
+Version: 1.0.0
+Summary: Flying the Tello drone autonomously
+Home-page: https://github.com/robagar/tello-autonomous
+Author: Rob Agar
+Author-email: tello_asyncio@fastmail.net
+License: GPL
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tello-autonomous
+
+Flying the [Tello EDU](https://www.ryzerobotics.com/tello-edu) drone autonomously with [tello-asyncio](https://pypi.org/project/tello-asyncio/)
+

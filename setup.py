@@ -14,5 +14,9 @@ setup(name='tello_autonomous',
       author='Rob Agar',
       author_email='tello_asyncio@fastmail.net',
       license='GPL',
-      packages=['tello_autonomous'],
-      python_requires=">=3.9")
+      packages=['tello_autonomous'],     
+      python_requires=">=3.9",
+      install_requires=[
+            "tello_asyncio",
+            "pyav"
+      ])

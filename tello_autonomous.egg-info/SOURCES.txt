@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+tello_autonomous/__main__.py
+tello_autonomous.egg-info/PKG-INFO
+tello_autonomous.egg-info/SOURCES.txt
+tello_autonomous.egg-info/dependency_links.txt
+tello_autonomous.egg-info/requires.txt
+tello_autonomous.egg-info/top_level.txt
