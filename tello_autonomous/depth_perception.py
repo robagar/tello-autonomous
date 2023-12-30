@@ -1,6 +1,8 @@
 from transformers import pipeline
 import numpy as np
 
+from .fonts import small_font
+
 # https://huggingface.co/vinvino02/glpn-nyu
 depth_estimator = pipeline("depth-estimation", model="vinvino02/glpn-nyu")
 
@@ -32,7 +34,7 @@ def deepest_depth(frame, draw):
         y0 = frame.height / 10
         y1 = frame.height / 2
         draw.line([(x,y0), (x, y1)], "green")
-        draw.text((x,y0), f"{depth:0.3f}m", fill="green", anchor="ms")
+        draw.text((x,y0), f"{depth:0.3f}m", fill="green", anchor="ms", font=small_font)
 
     return depth, normalized_x     
 
@@ -58,7 +60,7 @@ def depth_ahead(frame, draw=None):
         # draw min depth value in box
         x = (x0 + x1) / 2
         y = (y0 + y1) / 2
-        draw.text((x,y), f"{depth:0.3f}m", fill="blue", anchor="ms")
+        draw.text((x,y), f"{depth:0.3f}m", fill="blue", anchor="ms", font=small_font)
 
     return depth
 

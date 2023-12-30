@@ -2,7 +2,7 @@ import asyncio
 import av
 
 # TODO measure fov
-HORIZONTAL_HALF_FOV = 22.5
+HORIZONTAL_HALF_FOV = 28.5
 
 codec = av.CodecContext.create('h264', 'r')
 
